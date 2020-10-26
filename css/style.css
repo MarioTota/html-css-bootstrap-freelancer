@@ -14,15 +14,31 @@ h1, h2, h3 {
 header {
   background-color: lightgrey;
 }
+header .row {
+  position: relative;
+}
 .header-top-left {
   background-color: blue;
-  padding: 15px 0;
+  height: 25px;
 }
 .header-top-right {
   background-color: coral;
-  padding: 15px 0;
+  height: 25px;
 }
-
+#menu-button {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header-block {
+  display: inline-block;
+  background-color: red;
+  height: 25px;
+  width: 50px;
+  visibility: hidden;
+  float: right;
+}
 main {
     text-align: center;
 }
@@ -68,5 +84,16 @@ footer {
 
 /* Small devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-
+  #menu-button {
+    visibility: hidden;
+    margin: 0;
+  }
+  .header-block {
+    display: inline-block;
+    background-color: red;
+    height: 25px;
+    width: 50px;
+    float: right;
+    visibility: visible;
+  }
 }
