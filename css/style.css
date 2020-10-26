@@ -38,3 +38,20 @@ main {
 .button-orange {
   margin: auto;
 }
+#about {
+  background-color: lightgreen;
+}
+#contact {
+  background-color: lightblue;
+}
+#contact input {
+  display: block;
+  margin: auto;
+}
+#contact .button-orange {
+  float: left;
+}
+
+#footer-top {
+  background-color: #3B546D;
+}
