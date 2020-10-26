@@ -8,7 +8,9 @@
   border: 1px solid #FC7959;
   background-color: #FC7959;
 } */
-
+h1, h2, h3 {
+  margin-top: 0;
+}
 header {
   background-color: lightgrey;
 }
@@ -55,9 +57,10 @@ main {
 footer {
   color: white;
   text-align: center;
+  background-color: #3B546D;
 }
 #footer-top {
-  background-color: #3B546D;
+
 }
 #footer-bottom {
   background-color: #2D3F50;
