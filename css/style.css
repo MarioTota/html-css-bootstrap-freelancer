@@ -1,5 +1,5 @@
 /* bottoni */
-.button-orange {
+.button {
   width: 105px;
   height: 26px;
   padding: 5px;
@@ -10,13 +10,25 @@
   vertical-align: middle;
   margin: auto;
 }
+/* /bottoni */
 
+/* generali */
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 h1, h2, h3 {
   margin-top: 0;
 }
+.uppercase {
+  text-transform: uppercase;
+}
+.line-star {
+  width: 170px;
+  margin: auto;
+  border-top: 3px solid white;
+  position: relative;
+}
+/* /generali */
 
 header {
   background-color: #2D3F50;
@@ -26,12 +38,15 @@ header {
 header .row {
   position: relative;
 }
-.header-top-left {
+header .header-top-left {
   line-height: 50px;
   vertical-align: middle;
-  text-transform: uppercase;
 }
-#menu-button {
+header .header-top-right {
+  line-height: 50px;
+  vertical-align: middle;
+}
+header #menu-button {
   width: 26px;
   height: 22px;
   float: right;
@@ -45,12 +60,11 @@ header .row {
 #menu-button i {
   color: #686F74;
 }
-.header-block {
+.asd {
   display: inline-block;
   height: 50px;
   width: 50px;
   visibility: hidden;
-  float: right;
 }
 
 main {
@@ -58,7 +72,6 @@ main {
 }
 #jumbotron {
   background-color: #23BC9C;
-  text-transform: uppercase;
   color: white;
 }
 #jumbotron h1 {
@@ -69,12 +82,7 @@ main {
   height: 250px;
   padding-bottom: 30px;
 }
-.line-star {
-  width: 170px;
-  margin: auto;
-  border-top: 3px solid white;
-  position: relative;
-}
+
 #jumbotron i {
   position: absolute;
   top: -12px;
@@ -84,13 +92,13 @@ main {
   background-color: #23BC9C;
   font-size: 20px;
 }
+
 #profession {
   font-weight: normal;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 #portfolio h2 {
-  text-transform: uppercase;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -107,9 +115,7 @@ main {
   background-color: white;
   font-size: 20px;
 }
-.button-orange {
-  margin: auto;
-}
+
 #about {
   background-color: #23BC9C;
   color: white;
@@ -122,7 +128,6 @@ main {
 #about h2 {
   padding-top: 30px;
   padding-bottom: 30px;
-  text-transform: uppercase;
 }
 #about i {
   position: absolute;
@@ -137,26 +142,22 @@ main {
   width: 120px;
   padding-bottom: 30px;
 }
-.container-top-left,
-.container-bottom-right {
+#about .container-top-left,
+#about .container-bottom-right {
   margin-bottom: 20px;
 }
-#about .button-orange::before {
-  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f019"; color: white; padding-right: 1%;
-}
-#about .container .button-orange {
-  border: 1px solid white;
-}
-#about .bottone {
-  padding-bottom: 3%;
-}
+
+  /* font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f019"; color: white; padding-right: 1%; */
+
+
+
+
 #contact {
   color: black;
   padding-left: 100px;
   padding-right: 100px;
 }
 #contact h2 {
-  text-transform: uppercase;
   padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -186,38 +187,27 @@ main {
   border-top: none;
   border-bottom: 1px solid lightgrey;
 }
-input::placeholder,
-textarea::placeholder {
+#contact input::placeholder,
+#contact textarea::placeholder {
   color: black;
 }
-#contact .button-orange {
-  float: left;
-  padding-bottom: 30px;
-}
-#contact input
 
 footer {
   color: white;
   text-align: center;
-  background-color: #3B546D;
 }
-
-.footer-top {
+footer .container {
   color: white;
   background-color: #3B546D;
   text-align: center;
 }
-footer .row {
-  background-color: #3B546D;
-}
 footer span {
   display: block;
 }
-.vuoto {
+footer .vuoto {
   width: 100%;
 }
-
-.icons {
+footer .icons {
   width: 40px;
   height: 40px;
   padding: 10px;
@@ -232,21 +222,7 @@ footer i {
   left: 50%;
   transform: translate(-50% , -50%);
 }
-.uppercase {
-  text-transform: uppercase;
-}
-
-#contact .button-orange {
-  width: 105px;
-  height: 26px;
-  border-radius: 5px;
-  color: white;
-  background-color: #23BC9C;
-  line-height: 26px;
-  vertical-align: middle;
-  margin: auto;
-}
-#footer-bottom {
+footer #footer-bottom {
   background-color: #2D3F50;
   color: white;
   text-align: center;
@@ -258,15 +234,14 @@ footer i {
     visibility: hidden;
     margin: 0;
   }
-  .header-block {
+  .asd {
     display: inline-block;
     background-color: red;
-    height: 25px;
-    width: 50px;
     float: right;
     visibility: visible;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
   }
-  footer .footer-top {
-    width: 100%;
-  }
+
 }
