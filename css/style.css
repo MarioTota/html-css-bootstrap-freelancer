@@ -2,6 +2,7 @@
 .button-orange {
   width: 105px;
   height: 26px;
+  padding: 5px;
   border-radius: 5px;
   color: white;
   border: 1px solid white;
@@ -112,7 +113,6 @@ main {
 #about {
   background-color: #23BC9C;
   color: white;
-  height: 87vh;
 }
 #about .container {
   padding-left: 100px;
@@ -142,14 +142,18 @@ main {
   margin-bottom: 20px;
 }
 #about .button-orange::before {
-  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f019"; color: white; padding-right: 6%;
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f019"; color: white; padding-right: 1%;
 }
-
+#about .container .button-orange {
+  border: 1px solid white;
+}
+#about .bottone {
+  padding-bottom: 3%;
+}
 #contact {
   color: black;
   padding-left: 100px;
   padding-right: 100px;
-  height: 53vh;
 }
 #contact h2 {
   text-transform: uppercase;
@@ -191,14 +195,45 @@ textarea::placeholder {
   padding-bottom: 30px;
 }
 #contact input
+
 footer {
   color: white;
   text-align: center;
   background-color: #3B546D;
 }
+
 #footer-top {
-  background-color: #3B546D
+  color: white;
+  background-color: #3B546D;
+  text-align: center;
 }
+
+footer span {
+  display: block;
+}
+.vuoto {
+  width: 100%;
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+footer i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
 #contact .button-orange {
   width: 105px;
   height: 26px;
@@ -211,6 +246,7 @@ footer {
 }
 #footer-bottom {
   background-color: #2D3F50;
+  color: white;
 }
 
 /* Small devices (tablets, 768px and up) */
