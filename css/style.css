@@ -66,7 +66,7 @@ main {
   height: 250px;
   padding-bottom: 30px;
 }
-#jumbotron .line-star {
+.line-star {
   width: 170px;
   margin: auto;
   border-top: 3px solid white;
@@ -81,11 +81,28 @@ main {
   background-color: #23BC9C;
   font-size: 20px;
 }
-
 #profession {
   font-weight: normal;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+#portfolio h2 {
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#portfolio .line-star {
+  border-top: 3px solid black;
+  padding-bottom: 30px;
+}
+#portfolio i {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 9px;
+  background-color: white;
+  font-size: 20px;
 }
 .images {
 }
