@@ -10,9 +10,16 @@ header {
   padding: 15px 0;
 }
 
+main {
+    text-align: center;
+}
+
 #jumbotron {
-  text-align: center;
+  background-color: lightyellow;
 }
 #jumbotron img {
   height: 250px;
+}
+
+.images {
 }
