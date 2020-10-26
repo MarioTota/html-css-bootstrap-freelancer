@@ -147,6 +147,9 @@ main {
 
 #contact {
   color: black;
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 53vh;
 }
 #contact h2 {
   text-transform: uppercase;
@@ -168,22 +171,43 @@ main {
   font-size: 20px;
   background-color: white;
 }
-#contact input {
-  display: block;
-  margin: auto;
+#contact form {
+  padding-bottom: 5px;
+}
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid lightgrey;
+}
+input::placeholder,
+textarea::placeholder {
+  color: black;
 }
 #contact .button-orange {
   float: left;
   padding-bottom: 30px;
 }
-
+#contact input
 footer {
   color: white;
   text-align: center;
   background-color: #3B546D;
 }
 #footer-top {
-
+  background-color: #3B546D
+}
+#contact .button-orange {
+  width: 105px;
+  height: 26px;
+  border-radius: 5px;
+  color: white;
+  background-color: #23BC9C;
+  line-height: 26px;
+  vertical-align: middle;
+  margin: auto;
 }
 #footer-bottom {
   background-color: #2D3F50;
