@@ -1,13 +1,15 @@
 /* bottoni */
-/* .button-orange {
-  width: 119px;
+.button-orange {
+  width: 105px;
   height: 26px;
   border-radius: 5px;
-  padding: 7px;
   color: white;
-  border: 1px solid #FC7959;
-  background-color: #FC7959;
-} */
+  border: 1px solid white;
+  line-height: 26px;
+  vertical-align: middle;
+  margin: auto;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -104,17 +106,67 @@ main {
   background-color: white;
   font-size: 20px;
 }
-.images {
-}
-
 .button-orange {
   margin: auto;
 }
 #about {
-  background-color: lightgreen;
+  background-color: #23BC9C;
+  color: white;
+  height: 87vh;
 }
+#about .container {
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: left;
+}
+#about h2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+#about i {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 9px;
+  background-color: #23BC9C;
+  font-size: 20px;
+}
+#about .line-star {
+  width: 120px;
+  padding-bottom: 30px;
+}
+.container-top-left,
+.container-bottom-right {
+  margin-bottom: 20px;
+}
+#about .button-orange::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f019"; color: white; padding-right: 6%;
+}
+
 #contact {
-  background-color: lightblue;
+  color: black;
+}
+#contact h2 {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+#contact .line-star {
+  width: 120px;
+  padding-bottom: 30px;
+  border-top: 3px solid black;
+  position: relative;
+}
+#contact i {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 9px;
+  font-size: 20px;
+  background-color: white;
 }
 #contact input {
   display: block;
@@ -122,6 +174,7 @@ main {
 }
 #contact .button-orange {
   float: left;
+  padding-bottom: 30px;
 }
 
 footer {
