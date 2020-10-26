@@ -202,12 +202,14 @@ footer {
   background-color: #3B546D;
 }
 
-#footer-top {
+.footer-top {
   color: white;
   background-color: #3B546D;
   text-align: center;
 }
-
+footer .row {
+  background-color: #3B546D;
+}
 footer span {
   display: block;
 }
@@ -247,6 +249,7 @@ footer i {
 #footer-bottom {
   background-color: #2D3F50;
   color: white;
+  text-align: center;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -262,5 +265,8 @@ footer i {
     width: 50px;
     float: right;
     visibility: visible;
+  }
+  footer .footer-top {
+    width: 100%;
   }
 }
