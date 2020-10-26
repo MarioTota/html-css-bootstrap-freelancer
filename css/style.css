@@ -51,7 +51,12 @@ main {
 #contact .button-orange {
   float: left;
 }
-
+footer {
+  color: white;
+}
 #footer-top {
   background-color: #3B546D;
+}
+#footer-bottom {
+  background-color: #2D3F50;
 }
