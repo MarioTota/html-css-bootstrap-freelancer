@@ -8,48 +8,85 @@
   border: 1px solid #FC7959;
   background-color: #FC7959;
 } */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 h1, h2, h3 {
   margin-top: 0;
 }
+
 header {
-  background-color: lightgrey;
+  background-color: #2D3F50;
+  color: white;
+  font-weight: 900;
 }
 header .row {
   position: relative;
 }
 .header-top-left {
-  background-color: blue;
-  height: 25px;
-}
-.header-top-right {
-  background-color: coral;
-  height: 25px;
+  line-height: 50px;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
 #menu-button {
+  width: 26px;
+  height: 22px;
   float: right;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 14px;
+  right: 20px;
+  border: 1px solid lightgrey;
+  color: lightgrey;
+  text-align: center;
+}
+#menu-button i {
+  color: #686F74;
 }
 .header-block {
   display: inline-block;
-  background-color: red;
-  height: 25px;
+  height: 50px;
   width: 50px;
   visibility: hidden;
   float: right;
 }
+
 main {
     text-align: center;
 }
-
 #jumbotron {
-  background-color: lightyellow;
+  background-color: #23BC9C;
+  text-transform: uppercase;
+  color: white;
+}
+#jumbotron h1 {
+  font-weight: 900;
+  padding-bottom: 20px;
 }
 #jumbotron img {
   height: 250px;
+  padding-bottom: 30px;
+}
+#jumbotron .line-star {
+  width: 170px;
+  margin: auto;
+  border-top: 3px solid white;
+  position: relative;
+}
+#jumbotron i {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 9px;
+  background-color: #23BC9C;
+  font-size: 20px;
 }
 
+#profession {
+  font-weight: normal;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .images {
 }
 
