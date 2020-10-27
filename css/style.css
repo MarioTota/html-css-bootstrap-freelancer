@@ -1,17 +1,3 @@
-/* bottoni */
-.button {
-  width: 105px;
-  height: 26px;
-  padding: 5px;
-  border-radius: 5px;
-  color: white;
-  border: 1px solid white;
-  line-height: 26px;
-  vertical-align: middle;
-  margin: auto;
-}
-/* /bottoni */
-
 /* generali */
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -48,10 +34,15 @@ header i {
   color: #686F74;
   padding: 15px;
 }
+
 header a {
   text-decoration: none;
   color: white;
   padding: 0 10px;
+}
+header a:hover {
+  color: #23BC9C;
+  text-decoration: none;
 }
 main {
     text-align: center;
@@ -101,9 +92,32 @@ main {
   background-color: white;
   font-size: 20px;
 }
-#portfolio img {
+#portfolio .image {
+  background-image: url("https://www.quotidianpost.it/wp-content/uploads/2019/10/immagine-gatto-animale-bello-mondo.jpg");
   width: 100%;
-  padding: 15px;
+  height: 250px;
+  position: relative;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.layover {
+  width: 100%;
+  height: 100%;;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+.image:hover .layover {
+  background-color: rgba(35,188,156, 0.5);
+}
+.gatto span {
+  font-size: 50px;
+  color: white;
+  line-height: 200px;
+  vertical-align: middle;
+  visibility: hidden;
+}
+.image:hover .glyphicon.glyphicon-plus {
+  visibility: visible;
 }
 #about {
   background-color: #23BC9C;
@@ -135,11 +149,16 @@ main {
 #about .container-bottom-right {
   margin-bottom: 20px;
 }
-
-  /* font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f019"; color: white; padding-right: 1%; */
-
-
-
+#about button {
+  text-align: center;
+  background-color: #23BC9C;
+  color: white;
+  margin-bottom: 10px;
+  border: 1px solid white;
+}
+#about button span {
+  padding-right: 5px;
+}
 
 #contact {
   color: black;
@@ -181,7 +200,13 @@ main {
 #contact textarea::placeholder {
   color: black;
 }
-
+#contact button {
+    float: left;
+    background-color: #23BC9C;
+    color: white;
+    margin-bottom: 10px;
+    border: 1px solid white;
+}
 footer {
   color: white;
   text-align: center;
@@ -212,9 +237,12 @@ footer #footer-bottom {
   padding: 30px;
 }
 
-/* Small devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {
+/* Extra small devices (phones, less than 768px) */
+@media screen and (max-width: 767px) {
 
-
+  #footer-top p,
+  #footer-top .uppercase.col-xs-12.col-sm-4 {
+    padding-bottom: 20px;
+  }
 
 }
