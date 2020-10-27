@@ -35,38 +35,24 @@ header {
   color: white;
   font-weight: 900;
 }
-header .row {
-  position: relative;
-}
-header .header-top-left {
-  line-height: 50px;
-  vertical-align: middle;
-}
-header .header-top-left {
-  line-height: 50px;
-  vertical-align: middle;
-}
-header #menu-button {
-  width: 26px;
-  height: 22px;
-  float: right;
-  position: absolute;
-  top: 14px;
-  right: 20px;
-  border: 1px solid lightgrey;
-  color: lightgrey;
-  text-align: center;
-}
-#menu-button i {
-  color: #686F74;
-}
-.asd {
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  visibility: hidden;
-}
 
+header .header-top-left {
+  line-height: 50px;
+  vertical-align: middle;
+}
+header .header-top-right {
+  line-height: 50px;
+  vertical-align: middle;
+}
+header i {
+  color: #686F74;
+  padding: 15px;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+}
 main {
     text-align: center;
 }
@@ -157,8 +143,6 @@ main {
 
 #contact {
   color: black;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 #contact h2 {
   padding-bottom: 30px;
@@ -181,6 +165,9 @@ main {
 }
 #contact form {
   padding-bottom: 5px;
+  width: 60%;
+  text-align: center;
+  margin: auto;
 }
 #contact form input,
 #contact form textarea {
@@ -199,12 +186,6 @@ footer {
   color: white;
   text-align: center;
 }
-footer .container {
-  color: white;
-  background-color: #3B546D;
-  text-align: center;
-}
-
 footer .icons {
   width: 40px;
   height: 40px;
@@ -222,29 +203,18 @@ footer i {
 }
 footer #footer-top {
   background-color: #3B546D;
-  padding: 60px;
+  padding: 30px 0;
 }
+
 footer #footer-bottom {
   background-color: #2D3F50;
-  color: white;
   text-align: center;
   padding: 30px;
 }
 
 /* Small devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  #menu-button {
-    visibility: hidden;
-    margin: 0;
-  }
-  .asd {
-    display: inline-block;
-    background-color: red;
-    float: right;
-    visibility: visible;
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+
+
 
 }
