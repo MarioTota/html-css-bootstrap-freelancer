@@ -93,13 +93,34 @@ main {
   font-size: 20px;
 }
 #portfolio .image {
-  background-image: url("https://www.quotidianpost.it/wp-content/uploads/2019/10/immagine-gatto-animale-bello-mondo.jpg");
+  /* background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png"); */
   width: 100%;
   height: 250px;
   position: relative;
   background-size: cover;
   cursor: pointer;
   margin-bottom: 30px;
+}
+#portfolio .image.a {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png");
+}
+#portfolio .image.a {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png");
+}
+#portfolio .image.b {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png");
+}
+#portfolio .image.c {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/circus.png");
+}
+#portfolio .image.d {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/game.png");
+}
+#portfolio .image.e {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/safe.png");
+}
+#portfolio .image.f {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png");
 }
 #portfolio .layover {
   width: 100%;
@@ -112,8 +133,10 @@ main {
 #portfolio .gatto span {
   font-size: 50px;
   color: white;
-  line-height: 200px;
-  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
   visibility: hidden;
 }
 #portfolio .image:hover .glyphicon.glyphicon-plus {
