@@ -5,14 +5,30 @@ body {
 h1, h2, h3 {
   margin-top: 0;
 }
+h1 {
+  font-size: 50px;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+h2 {
+  font-size: 40px;
+}
 .uppercase {
   text-transform: uppercase;
 }
-.line-star {
-  width: 170px;
+.line-star-white {
+  width: 210px;
   margin: auto;
   border-top: 3px solid white;
   position: relative;
+  padding-bottom: 50px;
+}
+.line-star-black {
+  width: 210px;
+  margin: auto;
+  border-top: 3px solid black;
+  position: relative;
+  padding-bottom: 50px;
 }
 /* /generali */
 
@@ -20,46 +36,43 @@ header {
   background-color: #2D3F50;
   color: white;
   font-weight: 900;
-}
-
-header .header-top-left {
-  line-height: 50px;
+  line-height: 110px;
   vertical-align: middle;
 }
-header .header-top-right {
-  line-height: 50px;
-  vertical-align: middle;
+header #header-top-left {
+  font-size: 30px;
+}
+header #header-top-right {
+  font-size: 20px;
 }
 header i {
   color: #686F74;
   padding: 15px;
 }
-
 header a {
   text-decoration: none;
   color: white;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 header a:hover {
   color: #23BC9C;
   text-decoration: none;
 }
-main {
+
+main,
+footer {
     text-align: center;
 }
+
 #jumbotron {
   background-color: #23BC9C;
   color: white;
 }
-#jumbotron h1 {
-  font-weight: 900;
-  padding-bottom: 20px;
-}
 #jumbotron img {
-  height: 250px;
+  height: 350px;
+  padding-top: 90px;
   padding-bottom: 30px;
 }
-
 #jumbotron i {
   position: absolute;
   top: -12px;
@@ -69,18 +82,14 @@ main {
   background-color: #23BC9C;
   font-size: 20px;
 }
-
-#profession {
+#jumbotron #profession {
+  font-size: 20px;
   font-weight: normal;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 90px;
 }
+
 #portfolio h2 {
   padding-top: 30px;
-  padding-bottom: 30px;
-}
-#portfolio .line-star {
-  border-top: 3px solid black;
   padding-bottom: 30px;
 }
 #portfolio i {
@@ -93,7 +102,6 @@ main {
   font-size: 20px;
 }
 #portfolio .image {
-  /* background-image: url("https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png"); */
   width: 100%;
   height: 250px;
   position: relative;
@@ -127,10 +135,7 @@ main {
   height: 100%;;
   background-color: rgba(0, 0, 0, 0.0);
 }
-#portfolio .image:hover .layover {
-  background-color: rgba(35,188,156, 0.5);
-}
-#portfolio .gatto span {
+#portfolio span {
   font-size: 50px;
   color: white;
   position: absolute;
@@ -138,6 +143,9 @@ main {
   left: 50%;
   transform: translate(-50% , -50%);
   visibility: hidden;
+}
+#portfolio .image:hover .layover {
+  background-color: rgba(35,188,156, 0.5);
 }
 #portfolio .image:hover .glyphicon.glyphicon-plus {
   visibility: visible;
@@ -165,10 +173,6 @@ main {
   background-color: #23BC9C;
   font-size: 20px;
 }
-#about .line-star {
-  width: 120px;
-  padding-bottom: 30px;
-}
 #about .container-top-left,
 #about .container-bottom-right {
   margin-bottom: 20px;
@@ -190,12 +194,6 @@ main {
 #contact h2 {
   padding-bottom: 30px;
   padding-top: 30px;
-}
-#contact .line-star {
-  width: 120px;
-  padding-bottom: 30px;
-  border-top: 3px solid black;
-  position: relative;
 }
 #contact i {
   position: absolute;
@@ -231,9 +229,9 @@ main {
     margin-bottom: 10px;
     border: 1px solid white;
 }
+
 footer {
   color: white;
-  text-align: center;
 }
 footer .icons {
   width: 40px;
