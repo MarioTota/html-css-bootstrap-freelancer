@@ -42,7 +42,7 @@ header .header-top-left {
   line-height: 50px;
   vertical-align: middle;
 }
-header .header-top-right {
+header .header-top-left {
   line-height: 50px;
   vertical-align: middle;
 }
@@ -115,7 +115,10 @@ main {
   background-color: white;
   font-size: 20px;
 }
-
+#portfolio img {
+  width: 100%;
+  padding: 15px;
+}
 #about {
   background-color: #23BC9C;
   color: white;
@@ -201,12 +204,7 @@ footer .container {
   background-color: #3B546D;
   text-align: center;
 }
-footer span {
-  display: block;
-}
-footer .vuoto {
-  width: 100%;
-}
+
 footer .icons {
   width: 40px;
   height: 40px;
@@ -222,10 +220,15 @@ footer i {
   left: 50%;
   transform: translate(-50% , -50%);
 }
+footer #footer-top {
+  background-color: #3B546D;
+  padding: 60px;
+}
 footer #footer-bottom {
   background-color: #2D3F50;
   color: white;
   text-align: center;
+  padding: 30px;
 }
 
 /* Small devices (tablets, 768px and up) */
