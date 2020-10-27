@@ -101,24 +101,25 @@ main {
   cursor: pointer;
   margin-bottom: 30px;
 }
-.layover {
+#portfolio .layover {
   width: 100%;
   height: 100%;;
   background-color: rgba(0, 0, 0, 0.0);
 }
-.image:hover .layover {
+#portfolio .image:hover .layover {
   background-color: rgba(35,188,156, 0.5);
 }
-.gatto span {
+#portfolio .gatto span {
   font-size: 50px;
   color: white;
   line-height: 200px;
   vertical-align: middle;
   visibility: hidden;
 }
-.image:hover .glyphicon.glyphicon-plus {
+#portfolio .image:hover .glyphicon.glyphicon-plus {
   visibility: visible;
 }
+
 #about {
   background-color: #23BC9C;
   color: white;
