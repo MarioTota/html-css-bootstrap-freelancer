@@ -30,6 +30,12 @@ h2 {
   position: relative;
   padding-bottom: 50px;
 }
+
+#about button,
+#contact button {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
 /* /generali */
 
 header {
@@ -40,10 +46,10 @@ header {
   vertical-align: middle;
 }
 header #header-top-left {
-  font-size: 30px;
+  font-size: 19px;
 }
 header #header-top-right {
-  font-size: 20px;
+  font-size: 17px;
 }
 header i {
   color: #686F74;
@@ -181,7 +187,6 @@ footer {
   text-align: center;
   background-color: #23BC9C;
   color: white;
-  margin-bottom: 10px;
   border: 1px solid white;
 }
 #about button span {
@@ -226,12 +231,14 @@ footer {
     float: left;
     background-color: #23BC9C;
     color: white;
-    margin-bottom: 10px;
     border: 1px solid white;
 }
 
 footer {
   color: white;
+}
+footer .footer-subtitle {
+  padding-bottom: 30px;
 }
 footer .icons {
   width: 40px;
@@ -252,7 +259,10 @@ footer #footer-top {
   background-color: #3B546D;
   padding: 30px 0;
 }
-
+footer #footer-top .footer-title {
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
 footer #footer-bottom {
   background-color: #2D3F50;
   text-align: center;
@@ -262,9 +272,8 @@ footer #footer-bottom {
 /* Extra small devices (phones, less than 768px) */
 @media screen and (max-width: 767px) {
 
-  #footer-top p,
-  #footer-top .uppercase.col-xs-12.col-sm-4 {
-    padding-bottom: 20px;
+  header i {
+    padding: 45px;
   }
 
 }
